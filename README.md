@@ -181,7 +181,7 @@ Overall, SIEM products have a lot of features. The ones that interest us most as
 Example alert: If someone on a Windows operating system tries to enter 20 incorrect passwords in 10 seconds, this is suspicious activity. It is unlikely that someone who has forgotten their password would try to re-enter it that many times in such a short period of time. So we create a SIEM rule/filter to detect such activity that exceeds the threshold. Based on this SIEM rule, an alert will be generated when such a situation occurs.
 
 
-![image]()
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/alert.png)
 
 
 
