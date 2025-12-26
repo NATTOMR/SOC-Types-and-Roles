@@ -473,5 +473,136 @@ Many analysts fail to fully leverage EDR capabilities. Mastering this tool gives
 
 ---
 
+# 🤖 SOAR – Security Orchestration, Automation, and Response
+
+**SOAR** stands for **Security Orchestration, Automation, and Response**. It enables different security tools and products within an environment to work together, significantly reducing the workload of **SOC team members**.
+
+For example, a SOAR platform can automatically query **VirusTotal** for the source IP address of a SIEM alert, allowing the SOC analyst to focus on analysis rather than repetitive manual tasks.
+
+---
+
+## 🔍 What is SOAR?
+
+SOAR platforms provide:
+- Orchestration of multiple security tools  
+- Automation of repetitive security tasks  
+- Standardized incident response workflows  
+- Centralized case and investigation management  
+
+By automating common actions, SOAR improves efficiency, consistency, and response time in SOC operations.
+
+---
+
+## 🧰 Common SOAR Solutions
+
+Some widely used SOAR products in the industry include:
+- Splunk Phantom  
+- IBM Resilient  
+- Logsign  
+- Demisto  
+
+The image below demonstrates how SOAR can connect and automate multiple security tools within a single workflow.
+
+![SOAR Capabilities](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/SOAR-1.png)  
+*Image source: hawk-eye.io*
+
+---
+
+## ⏱️ Saves You Time
+
+One of the biggest advantages of SOAR is **time savings through automation**.
+
+Common automated workflows include:
+- IP address reputation checks  
+- File hash lookups  
+- Scanning suspicious files in sandbox environments  
+- Enriching alerts with third-party threat intelligence  
+
+By automating these steps, analysts can focus on decision-making instead of repetitive lookups.
+
+---
+
+## 🧩 Centralization: One Platform for Everything
+
+SOAR provides a **single platform** where multiple security tools are integrated, such as:
+- Sandbox environments  
+- Log Management systems  
+- Threat Intelligence platforms  
+- Third-party security tools  
+
+This eliminates the need to switch between multiple dashboards during an investigation.
+
+![SOAR Centralization](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/SOAR-2.png)  
+*Image source: splunk.com*
+
+---
+
+## 📋 Playbooks
+
+**Playbooks** are predefined workflows designed for specific incident scenarios.
+
+Using SOAR playbooks, analysts can:
+- Investigate SIEM alerts step by step  
+- Follow standardized investigation procedures  
+- Reduce mistakes caused by missed steps  
+
+Even if an analyst does not remember every investigation step, playbooks guide them through the process.
+
+---
+
+### 🔄 Consistency Across the SOC Team
+
+Playbooks also ensure **consistency** across all SOC team members.
+
+For example:
+- IP reputation checks should be performed by every analyst
+- If one analyst skips this step, investigation quality suffers
+
+By embedding this step into a playbook, all analysts follow the same investigation standard, improving overall SOC effectiveness.
+
+---
+
+## 🧪 LetsDefend and SOAR
+
+In LetsDefend, **Case Management** functions similarly to a SOAR platform.
+
+- SOC analysts can open cases directly from the SIEM (Monitoring) page  
+- The Case Management view displays:
+  - Open cases  
+  - Closed cases  
+
+![Case Management Overview](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/SOAR-3.png)
+
+---
+
+## 🕵️ Case Investigation with Playbooks
+
+When an analyst opens a case:
+- A playbook is automatically assigned  
+- The analyst investigates the associated SIEM alert by following the playbook steps  
+
+![SOAR Playbook View](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/SOAR-4.png)
+
+This approach speeds up investigations and ensures consistency across cases.
+
+---
+
+## 🎯 Summary
+
+In this lesson, we covered:
+- What a SOAR solution is  
+- How SOAR is used in SOC environments  
+- How SOAR benefits SOC analysts through automation and orchestration  
+
+SOAR is a force multiplier for SOC teams, enabling faster, more consistent, and more efficient incident response.
+
+---
+
+## 🔎 Case Management / SOAR Quick Tour
+
+![SOAR Quick Tour](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/SOAR-5.png)
+
+---
+
 ➡️ **Next Lesson:**  
-We will explore how **SOAR** helps automate and speed up the incident analysis and response process.
+We will explore **Threat Intelligence Feeds** and how they support SOC analysts during investigations.
