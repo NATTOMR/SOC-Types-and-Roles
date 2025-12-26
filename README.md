@@ -19,7 +19,7 @@ All Lessons
 ## Types of SOC Models
 - Depending on your security needs and budget, there are several types of SOCs:
 
-
+![image] (https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/soc-models.png)
 
 
 
