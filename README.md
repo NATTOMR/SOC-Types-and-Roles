@@ -1,143 +1,175 @@
-# SOC-Types-and-Roles
-All Lessons
-## Introduction to SOC 
-## SOC Types and Roles 
-## SOC Analyst and Their Responsibilities 
-## SIEM and Analyst Relationship 
-## Log Management 
-## EDR - Endpoint Detection and Response 
-## SOAR (Security Orchestration Automation and Response) 
-## Threat Intelligence Feed 
-## Common Mistakes made by SOC Analysts 
-## What is a SOC?
-- A Security Operation Center (SOC) is a facility where the information security team continuously monitors and analyzes the security of an organization. The primary purpose of the SOC team is to detect, analyze, and respond to cybersecurity incidents using technology, people, and processes.
+![Status](https://img.shields.io/badge/Status-Learning-blue)
+![Domain](https://img.shields.io/badge/Domain-Cybersecurity-red)
+![Focus](https://img.shields.io/badge/Focus-SOC-green)
 
+# 🛡️ SOC Types and Roles
 
+This repository provides a structured overview of **Security Operations Centers (SOC)**, including SOC models, roles, analyst responsibilities, and the technologies used in modern SOC environments.
 
+---
 
+## 📚 All Lessons
+- 🔍 Introduction to SOC  
+- 🏗️ SOC Types and Roles  
+- 👨‍💻 SOC Analyst and Their Responsibilities  
+- ⚙️ SIEM and Analyst Relationship  
+- 📜 Log Management  
+- 🧪 EDR – Endpoint Detection and Response  
+- 🤖 SOAR – Security Orchestration, Automation, and Response  
+- 🌐 Threat Intelligence Feed  
+- ⚠️ Common Mistakes Made by SOC Analysts  
 
-## Types of SOC Models
-- Depending on your security needs and budget, there are several types of SOCs:
+---
 
-- ![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/soc-models.png)
+## 🔍 What is a SOC?
 
+A **Security Operations Center (SOC)** is a centralized facility where the information security team continuously monitors, analyzes, and responds to cybersecurity threats.
 
+The primary purpose of a SOC is to:
+- Detect security incidents  
+- Analyze threats and vulnerabilities  
+- Respond to and remediate incidents  
+- Protect organizational assets using **people, processes, and technology**
 
+---
 
-## In-house SOC
-- This team is formed when an organization builds its cybersecurity team. Organizations considering an internal SOC should have a budget to support its continuity.
+## 🏗️ Types of SOC Models
 
+Depending on organizational needs, maturity, and budget, SOCs can be implemented in several models:
 
+![SOC Models](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/soc-models.png)
 
-## Virtual SOC
-- This type of SOC team does not have a permanent facility and often works remotely in various locations.
+### 🏢 In-House SOC
+- Built and managed internally by the organization  
+- Requires a dedicated budget and skilled security staff  
+- Provides full control over security operations  
 
+### 🌐 Virtual SOC
+- No permanent physical facility  
+- Operates remotely across multiple locations  
+- Flexible and cost-effective  
 
+### 🤝 Co-Managed SOC
+- Internal SOC team works alongside a Managed Security Service Provider (MSSP)  
+- Shared responsibilities  
+- Strong coordination is essential  
 
-## Co-Managed SOC
-- The Co-Managed SOC consists of internal SOC staff working with an external Managed Security Service Provider (MSSP). Coordination is key in this type of model.
+### 🧭 Command SOC
+- Central SOC that oversees multiple smaller or regional SOCs  
+- Common in large enterprises, telecom providers, and defense agencies  
 
+---
 
+## ⚙️ People, Process, and Technology
 
-## Command SOC
-- This SOC team oversees smaller SOCs across a large region. Organizations using this model include large telecommunications providers and defense agencies.
+A successful SOC relies on strong alignment between **people, processes, and technology**.
 
+### 👥 People
+- Highly trained security professionals  
+- Familiar with alerts, attack techniques, and incident response  
+- Able to adapt quickly to evolving threat landscapes  
+- Willing to continuously research and learn  
 
+### 📋 Processes
+- Aligned with security frameworks and regulations such as **NIST, PCI-DSS, and HIPAA**  
+- Standardized procedures to ensure consistent incident handling  
+- Clearly defined escalation and response workflows  
 
+### 🧰 Technology
+- Tools for detection, prevention, investigation, and response  
+- Includes SIEM, EDR, SOAR, and penetration testing tools  
+- Tool selection should consider **organizational needs and budget**, not just market popularity  
 
+---
 
-## People, Process, and Technology
-- Building a successful SOC requires serious coordination. Most importantly, there should be a strong relationship between people, processes, and technology.
+## 👥 SOC Roles
 
+### 🔎 SOC Analyst
+- Categorized into **Level 1, Level 2, and Level 3**  
+- Monitors and investigates security alerts  
+- Identifies root causes  
+- Recommends remediation actions  
 
+### 🚨 Incident Responder
+- Performs initial assessment of security incidents  
+- Focuses on containment, eradication, and recovery  
 
-- Simply put, we will discuss the people, processes, and technologies required for SOC.
+### 🕵️ Threat Hunter
+- Proactively searches for hidden or advanced threats  
+- Investigates APTs and evasive attacks  
+- Uses manual and automated techniques  
+- Eliminates threats before business impact occurs  
 
+### 🛠️ Security Engineer
+- Maintains SOC infrastructure and security tools  
+- Integrates SIEM with SOAR platforms  
+- Ensures optimal performance of detection systems  
 
+### 📊 SOC Manager
+- Oversees SOC strategy and operations  
+- Handles budgeting, staffing, and performance metrics  
+- Focuses on operational and managerial responsibilities  
 
-## People
-- A strong SOC team requires highly trained personnel who are familiar with security alerts and attack scenarios. Because attack types are constantly changing, you need team members who can easily adapt to new attack types and are willing to conduct research.
+---
 
+# 👨‍💻 SOC Analyst and Their Responsibilities
 
+A **SOC Analyst** is typically the **first line of defense** against cyber threats.
 
-## Processes
-- To further develop your SOC structure, you need to align it with many different types of security requirements, such as NIST, PCI, and HIPAA. All processes require extreme standardization of actions to ensure nothing is left out.
+- Investigates security alerts  
+- Determines whether alerts are real threats or false positives  
+- Escalates incidents when necessary  
+- Plays a critical role in early threat detection  
 
+---
 
+## ✅ Advantages of Being a SOC Analyst
 
-## Technology
-- The team needs to have different products for many tasks, such as penetration testing, detection, prevention, and analysis, and they need to follow the market and technology closely to find the best solution for the organization. Sometimes the best product on the market may not be the best product for your team. Remember to consider other factors such as the organization's budget.
+- Exposure to a wide range of attack techniques and malware  
+- Continuous learning and skill development  
+- Less monotonous work due to varied incidents  
+- Strong foundation for advanced cybersecurity roles  
 
+---
 
-## SOC Roles
-### SOC Analyst
-- This role can be categorized as Level 1, 2, and 3 according to the SOC structure. A security analyst classifies the alert, looks for the cause, and advises on remediation.
+## 🕒 A Day in the Life of a SOC Analyst
 
+- Review alerts generated by the SIEM  
+- Validate alerts using:
+  - 🧪 Endpoint Detection and Response (EDR)  
+  - 📜 Log Management tools  
+  - 🤖 SOAR platforms  
+- Document findings  
+- Escalate confirmed incidents  
 
+---
 
-## Incident Responder
-- An Incident Response Officer is an individual responsible for threat detection. This role performs the initial assessment of security breaches.
+## 🧠 Skills Required for SOC Analysts
 
+### 🖥️ Operating Systems
+- Strong understanding of **Windows and Linux**  
+- Ability to identify normal vs suspicious system behavior  
 
+### 🌐 Networking
+- Analyze malicious IP addresses, domains, and URLs  
+- Identify suspicious network traffic  
+- Detect potential data exfiltration  
+- Understand networking fundamentals  
 
-## Threat Hunter
-- A Threat Hunter is a cybersecurity professional who proactively seeks out and investigates potential threats and vulnerabilities within an organization's network or system. They use a combination of manual and automated techniques to detect, isolate, and mitigate advanced persistent threats (APTs) and other sophisticated attacks that may evade traditional security measures. Threat hunters typically have a deep understanding of the organization's IT infrastructure and security posture, as well as knowledge of emerging threats and attack tactics. They aim to find and eliminate threats before they can damage or disrupt the business.
+### 🧪 Malware Analysis
+- Analyze malicious files and behaviors  
+- Identify command-and-control (C2) servers  
+- Confirm whether internal systems are communicating with malicious infrastructure  
 
+---
 
+## 📌 Summary
 
-## Security Engineer
-- Security engineers are responsible for maintaining the security infrastructure of Security Information and Event Management (SIEM) solutions and security operations center (SOC) products. For example, a security engineer builds the connection between SIEM and Security Orchestration, Automation, and Response (SOAR) products.
+A successful SOC depends on:
+- 👥 Skilled professionals  
+- 📋 Well-defined processes  
+- 🧰 Carefully selected technologies  
 
+This repository serves as a **professional foundation for aspiring SOC Analysts and cybersecurity learners**.
 
-
-## SOC Manager
-- A SOC manager takes on management responsibilities such as budgeting, strategizing, managing staff, and coordinating operations. They deal with operational rather than technical issues.
-
-#  SOC Analyst and Their Responsibilities
-
-- In this section, we will discuss what a SOC Analyst is, where they fit into the SOC team, and the general responsibilities of the role. It is important to review these sections carefully before learning about the technical side of the role. In this way, aspiring SOC Analyst candidates can get an idea of what their future career might look like.
-
-
-
-- A SOC Analyst is the first person to investigate threats to a system. If the situation demands it, they escalate incidents to their supervisors so they can mitigate threats. The SOC Analyst plays an important role on the SOC team because they are the first person to respond to a threat.
-
-
-
-## The Advantages of Being a SOC Analyst
-- There are many various techniques for attack vectors and malicious software and they increase more and more every day. As an analyst you will get greater enjoyment from investigating these varying types of incidents. Even though the operating systems, security products, etc. that you use will be the same the job will feel less monotonous because you will be analyzing different incidents. Also, you may not encounter such techniques (not every week or every day).
-
-
-
-## A Day in the Life of a SOC Analyst
-- Throughout the day, a SOC analyst typically reviews alerts in the SIEM and determines which ones are real threats. To reach a conclusion, they use various security and protection products such as Endpoint Detection and Response (EDR), Log Management, and SOAR. We will explain in detail why and how these products are used later in the training program.
-
-
-
-- To be a successful SOC analyst who is not dependent on security products and can correctly analyze SIEM alerts, you must have the following skills and abilities.
-
-
-
-## Operating Systems
-- To determine what is abnormal in a system, you first need to know what is accepted as normal. For example, there are many services within the Windows operating system, and it is difficult to know which ones are suspicious without knowing which ones are or could be considered normal Windows services. Therefore, you should be familiar with how Windows/Linux operating systems work.
-
-
-
-## Network
-- First and foremost, in this role, you will be dealing with a lot of malicious IPs and URLs, so you need to confirm that there are no devices on the network trying to connect to those addresses. Once you accomplish that, it will set the direction of the analysis.
-
-
-
-- This step is a bit more complicated because you may have to find a potential data leak on the network. To perform all of these functions, you need to understand the basics of networking.
-
-
-
-## Malware Analysis
-- When dealing with most threats, you are likely to encounter some type of malicious software. To understand the real purpose of these malicious programs (they sometimes display different behaviors to fool analysts), you need to have malware analysis skills.
-
-
-
-- It is important to at least determine what the command and control center of the malicious file is and whether or not there is a device communicating with that address.
-
-
-
-- In general, we have discussed what a SOC analyst is, what the responsibilities of the role are, and what skills a SOC Analyst needs to have. As the course progresses, it will also cover technical areas, starting with SIEM.
+⭐ If you find this repository useful, consider starring it!
