@@ -181,14 +181,14 @@ Overall, SIEM products have a lot of features. The ones that interest us most as
 Example alert: If someone on a Windows operating system tries to enter 20 incorrect passwords in 10 seconds, this is suspicious activity. It is unlikely that someone who has forgotten their password would try to re-enter it that many times in such a short period of time. So we create a SIEM rule/filter to detect such activity that exceeds the threshold. Based on this SIEM rule, an alert will be generated when such a situation occurs.
 
 
-
+![image]()
 
 
 
 Some popular SIEM solutions: IBM QRadar, ArcSight ESM, FortiSIEM, Splunk, etc. To get a better picture, you can visit the “Monitoring” page on LetsDefend.
 
 
-
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/monitoring%20-%20Copy.png)
 
 
 
@@ -203,7 +203,7 @@ As mentioned above, alerts are generated from data that passes through filters. 
 
 For a better understanding, let's go back to the "Monitoring" page; as you can see below, there are various alerts on the SIEM interface. A SOC analyst should analyze the details related to these alerts with the help of other SOC products (such as EDR, Log Management, Threat Intelligence Feed, etc.) and ultimately determine whether they are real threats or not.
 
-
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/threats%20-%20Copy.png)
 
 
 
@@ -236,4 +236,5 @@ So far, we have covered what SIEM is, how it helps SOC analysts, and how it shou
 
 
 Finally, as a SOC analyst, you can view the SIEM dashboard:
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/succesful.png)
 
