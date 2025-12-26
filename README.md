@@ -262,7 +262,7 @@ If you go to the “Log Management” page in LetsDefend, you will see various l
 
 
 
-![image]()
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/log-1.png)
 
 
 
@@ -276,4 +276,4 @@ This leaves us with a second situation: You see a SIEM alert indicating that a L
 
 
 Perform a basic log search:
-![image]()
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/log-2.png)
