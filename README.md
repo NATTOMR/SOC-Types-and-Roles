@@ -367,7 +367,7 @@ Some EDR solutions commonly used in the workplace: CarbonBlack, SentinelOne, and
 
 To understand what you can do with EDR as an analyst, let's take a look at "Endpoint Security" on LetsDefend.
 
-
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-2.png)
 
 
 
@@ -378,9 +378,9 @@ As you can see in the image, the accessible endpoint devices are listed on the l
 
 The right side displays general information about the device and shows sections such as Browser History, Network Connections, and Process List.
 
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-3.png)
 
-
-
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-4.png)
 
 
 
@@ -390,7 +390,7 @@ Live Investigation
 Next, you can click the Connect button and access the machine itself to continue the analysis.
 
 
-
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-5.png)
 
 
 
@@ -403,7 +403,7 @@ Therefore, the device should be isolated from the internal and external networks
 
 
 
-
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-6.png)
 
 
 Quick Tip
@@ -427,3 +427,4 @@ In the next section, we will discuss how to speed up the analysis process with S
 Use the EDR and investigate a host here:
 
 
+![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-7.png)
