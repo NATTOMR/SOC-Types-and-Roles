@@ -349,82 +349,129 @@ By correlating log data, analysts gain visibility beyond individual alerts.
 
 
 
-EDR - Endpoint Detection and Response
+# 🧪 EDR – Endpoint Detection and Response
 
-A SOC analyst must spend a significant amount of time using EDR when performing analysis on an endpoint device. The following sections discuss why EDR is beneficial to SOC analysts and how to use it effectively.
+A **SOC Analyst** spends a significant amount of time using **EDR** while investigating endpoint devices. This lesson explains what EDR is, why it is important for SOC operations, and how analysts use it effectively during investigations.
 
+---
 
+## 🔍 What is EDR?
 
-What is EDR?
-Endpoint Detection and Response (EDR), also known as Endpoint Threat Detection and Response (ETDR), is an integrated endpoint security solution that combines continuous, real-time monitoring and collection of endpoint data with rules-based automated response and analysis capabilities. (Definition source: mcafee.com)
+**Endpoint Detection and Response (EDR)**, also known as **Endpoint Threat Detection and Response (ETDR)**, is an endpoint security solution that provides:
 
+- Continuous, real-time monitoring of endpoints  
+- Collection of endpoint telemetry data  
+- Detection using rules and behavioral analysis  
+- Automated response and investigation capabilities  
 
+> **Definition source:** mcafee.com
 
-Analysis with EDR
-Some EDR solutions commonly used in the workplace: CarbonBlack, SentinelOne, and FireEye HX.
+EDR enables SOC analysts to gain deep visibility into endpoint activity and respond quickly to threats.
 
+---
 
+## 🔎 Analysis with EDR
 
-To understand what you can do with EDR as an analyst, let's take a look at "Endpoint Security" on LetsDefend.
+Some commonly used EDR solutions in enterprise environments include:
+- Carbon Black  
+- SentinelOne  
+- FireEye HX  
 
-![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-2.png)
+To understand EDR capabilities from an analyst’s perspective, we can examine the **Endpoint Security** page in LetsDefend.
 
+![Endpoint Security Overview](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-2.png)
 
+---
 
+## 🖥️ Endpoint Visibility
 
-As you can see in the image, the accessible endpoint devices are listed on the left. You can search for endpoints in the search bar, or if there is an IOC (an IP address, file hash, process name, etc.), we can perform a search across all hosts.
+- Accessible endpoint devices are listed on the left panel  
+- Analysts can search for a specific endpoint using the search bar  
+- If an **IOC** (IP address, file hash, process name, etc.) is available, analysts can perform searches across **all hosts**
 
+The right panel displays general device information and investigative sections such as:
+- Browser History  
+- Network Connections  
+- Process List  
 
+![Endpoint Details](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-3.png)
+![Process and Network View](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-4.png)
 
-The right side displays general information about the device and shows sections such as Browser History, Network Connections, and Process List.
+---
 
-![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-3.png)
+## 🔌 Live Investigation
 
-![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-4.png)
+For deeper analysis, analysts can click the **Connect** button to access the endpoint directly and continue the investigation in real time.
 
+![Live Investigation](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-5.png)
 
+Live access allows analysts to:
+- Review running processes  
+- Inspect suspicious files  
+- Collect forensic evidence  
 
+---
 
+## 🚧 Containment
 
-Live Investigation
-Next, you can click the Connect button and access the machine itself to continue the analysis.
+When an endpoint is compromised, **containment** is a critical step.
 
+### Why isolate a device?
+- Prevent the attacker from maintaining access  
+- Stop lateral movement within the internal network  
 
-![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-5.png)
+EDR solutions provide a **containment feature** that:
+- Isolates the device from internal and external networks  
+- Allows communication only with the EDR management console  
+- Enables continued investigation while preventing further damage  
 
+![Endpoint Containment](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-6.png)
 
+The device remains isolated until:
+- Vulnerabilities are fixed  
+- Malicious activity is removed  
+- The system is safe to return to production  
 
-Containment
-You need to isolate a hacked machine from the network. There are two important reasons for doing this: to prevent the attacker from connecting to the internal network and moving around the internal network.
+---
 
+## 💡 Quick Tip: IOC Hunting with EDR
 
+EDR platforms allow analysts to search for **Indicators of Compromise (IOCs)** across all endpoints.
 
-Therefore, the device should be isolated from the internal and external networks until the vulnerabilities are repaired and the device is ready for use. You can ensure isolation by using the containment feature of EDR solutions. This feature allows the selected device to communicate solely with the EDR center. This means that even though the device is isolated from the network, you can continue your analysis.
+### Example:
+- You identify a malicious file with MD5 hash:  
+  `ac596d282e2f9b1501d66fce5a451f00`
+- Search this hash in EDR
+- Determine whether the file exists or is executing on other hosts
 
+This helps identify:
+- Scope of the attack  
+- Additional compromised endpoints  
 
+---
 
-![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-6.png)
+## 📌 Conclusion
 
+EDR is one of the most frequently used tools by SOC analysts, alongside **Log Management**.
 
-Quick Tip
-If you have any type of IOC, such as a file hash, file name, etc., you can perform a search in EDR across all hosts and see if there is a match. For example, let's say you are certain that a device has been hacked and you have obtained a file with an MD5 hash of "ac596d282e2f9b1501d66fce5a451f00". You can search for this hash value in EDR and determine whether this file exists or is being executed on other devices. This will help you understand who has been affected by this attack.
+Key takeaways:
+- EDR provides deep endpoint visibility  
+- Enables live investigations  
+- Supports containment and IOC hunting  
+- Effective use of EDR significantly improves investigation speed and accuracy  
 
+Many analysts fail to fully leverage EDR capabilities. Mastering this tool gives you a strong advantage in SOC operations.
 
+---
 
-Conclusion
-We covered the basics of EDR, which you will use just as often as Log Management. In the past, we have seen analysts fail to use EDR solutions effectively, so spending some time on this topic will put you one step ahead of the crowd.
+## 🧪 Practice
 
+- Navigate to **Endpoint Security** and investigate a host  
+- Review related alerts on the **Monitoring** page  
 
+![Practice EDR Investigation](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-7.png)
 
-Please remember to go to " Endpoint Security ” to practice, and then review the alerts on the “Monitoring” page.
+---
 
-
-
-In the next section, we will discuss how to speed up the analysis process with SOAR.
-
-
-
-Use the EDR and investigate a host here:
-
-
-![image](https://github.com/NATTOMR/SOC-Types-and-Roles/blob/main/EDR-7.png)
+➡️ **Next Lesson:**  
+We will explore how **SOAR** helps automate and speed up the incident analysis and response process.
