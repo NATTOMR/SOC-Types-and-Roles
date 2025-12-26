@@ -9,23 +9,23 @@ All Lessons
 ## SOAR (Security Orchestration Automation and Response) 
 ## Threat Intelligence Feed 
 ## Common Mistakes made by SOC Analysts 
-What is a SOC?
-A Security Operation Center (SOC) is a facility where the information security team continuously monitors and analyzes the security of an organization. The primary purpose of the SOC team is to detect, analyze, and respond to cybersecurity incidents using technology, people, and processes.
+## What is a SOC?
+- A Security Operation Center (SOC) is a facility where the information security team continuously monitors and analyzes the security of an organization. The primary purpose of the SOC team is to detect, analyze, and respond to cybersecurity incidents using technology, people, and processes.
 
 
 
 
 
-Types of SOC Models
-Depending on your security needs and budget, there are several types of SOCs:
+## Types of SOC Models
+- Depending on your security needs and budget, there are several types of SOCs:
 
 
 
 
 
 
-In-house SOC
-This team is formed when an organization builds its cybersecurity team. Organizations considering an internal SOC should have a budget to support its continuity.
+## In-house SOC
+- This team is formed when an organization builds its cybersecurity team. Organizations considering an internal SOC should have a budget to support its continuity.
 
 
 
